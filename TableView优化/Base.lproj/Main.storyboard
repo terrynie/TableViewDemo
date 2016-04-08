@@ -151,11 +151,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQZ-hN-bdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-301" y="-66"/>
+            <point key="canvasLocation" x="-158" y="12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Ih-WE-vcj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IbD-jO-e3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="PG0-le-rCM" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ySx-re-9Pt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -166,9 +167,8 @@
                         <segue destination="iqE-hl-5dI" kind="relationship" relationship="rootViewController" id="glj-79-Gnc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IbD-jO-e3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1270" y="-37"/>
+            <point key="canvasLocation" x="-797" y="12"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="cie-aD-KTz">
@@ -267,13 +267,14 @@
                     <navigationItem key="navigationItem" id="M2N-5h-m9y"/>
                     <connections>
                         <outlet property="age" destination="8zM-4B-6PM" id="Bxz-Qj-xp7"/>
+                        <outlet property="button" destination="f3G-UV-Snn" id="QdN-HQ-BPf"/>
                         <outlet property="name" destination="UgV-X4-d65" id="cY0-kS-Gui"/>
                         <outlet property="sex" destination="aBR-mH-gu3" id="et4-ZP-j0O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Haq-Fk-Gog" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="332" y="-13"/>
+            <point key="canvasLocation" x="480" y="12"/>
         </scene>
     </scenes>
     <resources>

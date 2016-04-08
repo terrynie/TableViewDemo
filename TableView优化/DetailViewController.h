@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 @class Person;
+@protocol AddDelegate;
 
 @interface DetailViewController : UIViewController
+@property (nonatomic, weak)id<AddDelegate> delegate;
+
 -(instancetype)init;
 -(void)recievePerson:(Person *)person;
+-(void)hiddenButton;
 @end

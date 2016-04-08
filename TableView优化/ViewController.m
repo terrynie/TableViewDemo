@@ -29,6 +29,7 @@
     for (NSDictionary *dict in tempArray) {
         Person *person = [Person personWithDict:dict];
         [_array addObject:person];
+        
     }
     
 }
@@ -66,14 +67,16 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DetailViewController *dvc = segue.destinationViewController;
+    dvc.delegate = self;
     if ([segue.identifier isEqualToString:@"detail"]) {
-        DetailViewController *dvc = segue.destinationViewController;
         Person *person = [[Person alloc] initWithCell:sender];
         [dvc recievePerson:person];
+        [dvc hiddenButton];
     }
 }
 
-#pragma delegate
+#pragma mark - delegate
 
 - (IBAction)add {
     [self performSegueWithIdentifier:@"add" sender:self];

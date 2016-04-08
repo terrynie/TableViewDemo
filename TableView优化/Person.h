@@ -14,6 +14,7 @@
 @property(nonatomic, retain)NSString *sex;
 @property(nonatomic, assign)NSInteger age;
 
+
 +(instancetype)personWithDict:(NSDictionary *)dict;
 -(instancetype)initWithDict:(NSDictionary *)dict;
 -(instancetype)initWithCell:(PersonCell *)cell;
